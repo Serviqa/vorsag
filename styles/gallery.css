@@ -1,0 +1,39 @@
+#gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #CDF2CE;
+    padding: 2rem;
+    /* height: 30rem; */
+
+    .gallery_header h2 {
+        font-weight: 700;
+        font-size: 1.7rem;
+    }
+
+    .gallery_header h3,
+    .events_header h3 {
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+    }
+
+    .gallery_container {
+        display: flex;
+        column-gap: 1rem;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .gallery_card img {}
+
+    .gallery_btn {
+        width: 100%;
+        padding: .7rem 3rem;
+        color: var(--quaternary-color);
+        font-size: 1rem;
+        background-color: var(--primary-color);
+        border: none;
+        border-radius: .5rem;
+        margin-top: 1rem;
+    }
+}

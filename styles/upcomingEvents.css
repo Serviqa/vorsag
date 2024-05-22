@@ -1,0 +1,166 @@
+.upcoming_event {
+    background-color: var(--quaternary-color);
+    width: 82%;
+    height: 25rem;
+    margin: 3rem auto;
+    padding: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    column-gap: 2rem;
+    position: relative;
+
+    .upcoming_event span {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background-color: var(--primary-color);
+        color: var(--quaternary-color);
+        padding: .5rem 1rem;
+        border-radius: 0 0 0 2rem;
+        font-size: 1.5rem;
+        font-weight: 900;
+
+    }
+
+    .event_banner {
+        width: 40%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .event_banner img {
+        height: 100%;
+        border-radius: 1rem;
+    }
+
+    .event_details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .time {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "day-h hour-h minute-h second-h ."
+            "day hour minute second remaining";
+        column-gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .day-h {
+        grid-area: day-h;
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+
+    .hour-h {
+        grid-area: hour-h;
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+
+    .min-h {
+        grid-area: minute-h;
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+
+    .sec-h {
+        grid-area: second-h;
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+
+    .day {
+        grid-area: day;
+        font-size: 1.5rem;
+    }
+
+    .hour {
+        grid-area: hour;
+        font-size: 1.5rem;
+    }
+
+    .min {
+        grid-area: minute;
+        font-size: 1.5rem;
+    }
+
+    .sec {
+        grid-area: second;
+        font-size: 1.5rem;
+    }
+
+    .remaining {
+        grid-area: remaining;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .tick {
+        padding: 1rem;
+        width: 70%;
+        background-color: #eee;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .event_description {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .event_description h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .event_description p {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .date_venue {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    .more {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .read_more {
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-decoration: none;
+        color: var(--primary-color);
+    }
+
+    .arrows {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 1rem;
+    }
+
+    .arrows img:hover {
+        cursor: pointer;
+        opacity: .7;
+    }
+}
