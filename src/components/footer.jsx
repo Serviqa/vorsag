@@ -96,9 +96,10 @@ export default function Footer() {
             <h3>Chapters</h3>
             <RenderChapters />
           </div>
-          <div className="resources"></div>
-          <h3>Resources</h3>
-          <RenderResources />
+          <div className="resources">
+            <h3>Resources</h3>
+            <RenderResources />
+          </div>
         </div>
       </div>
     </>
