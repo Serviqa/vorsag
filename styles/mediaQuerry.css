@@ -78,7 +78,7 @@
   #support {
     flex-direction: column;
     justify-content: unset;
-    padding: 0;
+    padding: 3rem 0 1.5rem 0;
     width: 98%;
     margin: 1rem auto;
     height: auto;
@@ -89,7 +89,9 @@
 
       #partners_img {
         width: 100%;
-        overflow: hidden;
+        overflow-x: auto;
+        transition: 700ms cubic-bezier(0.075, 0.02, 0.165, 1);
+        transform-origin: center;
       }
 
       p {
