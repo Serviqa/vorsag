@@ -9,7 +9,7 @@ export function LargeNav() {
   }
 
   return (
-    <nav id="nav">
+    <nav className="nav">
       <div id="nav_container">
         <img src={logo} id="logo_image" alt="logo" />
         <LinksContainer variant={"large"} />
