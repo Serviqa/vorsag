@@ -41,6 +41,8 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+
+
 header {
   display: flex;
   justify-content: space-between;
@@ -73,6 +75,7 @@ button:active,
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }
 
+#hero__section,
 #about,
 #gallery,
 #events {

@@ -1,4 +1,4 @@
-#events {
+.events {
     display: flex;
     flex-direction: column;
     padding: 2rem;
@@ -9,7 +9,15 @@
         gap: 1rem;
     }
 
+    .event_card {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--background-color-2);
+        /* padding: .5rem; */
+    }
+
     .event_card img {
-        width: 22rem;
+        width: auto;
+        height: 20rem;
     }
 }

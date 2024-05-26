@@ -26,7 +26,17 @@
         height: 10rem;
     }
 
-    .partners h3,
+    .partners h2 {
+        color: var(--primary-color);
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+    .line {
+        width: 22%;
+        margin: 1rem 0;
+    }
+
     .mission h3,
     .vision h3 {
         color: var(--primary-color);

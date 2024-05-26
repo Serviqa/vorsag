@@ -14,7 +14,7 @@ function LinksContainer({ variant }) {
         &times;
       </span> */}
       <li>
-        <a href="#home" className="link-item">
+        <a href="#hero__section" className="link-item">
           Home
         </a>
       </li>
@@ -38,11 +38,11 @@ function LinksContainer({ variant }) {
           Contact Us
         </a>
       </li>
-      <li>
+      {/* <li>
         <a href="#chapters" className="link-item">
           Chapters
         </a>
-      </li>
+      </li> */}
     </ul>
   );
 }

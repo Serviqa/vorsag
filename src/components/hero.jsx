@@ -21,7 +21,9 @@ export default function Hero() {
             contributing to the growth and advancement of our cherished region
             through collaborative initiatives and developmental projects.
           </p>
-          <input type="button" value="Read More" className="read_more_btn" />
+          <a href="#about">
+            <input type="button" value="Read More" className="read_more_btn" />
+          </a>
         </div>
       </section>
     </>

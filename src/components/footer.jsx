@@ -26,14 +26,7 @@ function RenderSocialImages() {
 }
 
 function RenderLinks() {
-  const linksList = [
-    "Home",
-    "About",
-    "Events",
-    "Gallery",
-    "Chapters",
-    "Contact Us",
-  ];
+  const linksList = ["Home", "About", "Events", "Gallery", "Contact Us"];
   return linksList.map((link, index) => {
     return (
       <a href="#" className="link-item" key={index}>
