@@ -1,0 +1,30 @@
+/* Example CSS - adjust as needed */
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Ensure it takes at least full viewport height */
+}
+
+.main-layout main {
+    flex-grow: 1;
+    /* Allows main content to expand and push footer down */
+    display: flex;
+    /* Optional: if you want to center the loading message */
+    justify-content: center;
+    /* Optional: centers loading message horizontally */
+    align-items: center;
+    /* Optional: centers loading message vertically */
+}
+
+.loading-message {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Ensure header and footer don't shrink or grow unnecessarily */
+.main-layout header,
+.main-layout footer {
+    flex-shrink: 0;
+}
