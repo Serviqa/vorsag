@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+:root {
+    --primary-color: #079B09;
+    --secondary-color: #F2F2F2;
+    --tertiary-color: #000000;
+    --quaternary-color: #FFFFFF;
+    --background-color: #dfffe0fd;
+    --trans-background-color: #dfffe0a1;
+    --background-color-2: #bed9bf;
+    --background-color-3: #92D393;
+    --modal-background: #00000077;
+
+
+    --font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+    font-family: var(--font-family);
+    color: var(--tertiary-color);
+}

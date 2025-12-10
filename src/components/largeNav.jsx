@@ -1,22 +1,25 @@
+import { useState } from "react";
 import { LinksContainer, Modal } from "./navItems";
-import logo from "/src/assets/logo.png";
-import "/styles/navBar.css";
+import logo from "../assets/logo.png";
 
 export function LargeNav() {
-  function openModal() {
-    const modal = document.getElementById("join_modal");
-    modal.classList.toggle("hidden");
-  }
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <nav className="nav">
+    <nav className="nav" role="navigation" aria-label="Main navigation">
       <div id="nav_container">
-        <img src={logo} id="logo_image" alt="logo" />
-        <LinksContainer variant={"large"} />
-        <button className="link-item join_btn" id="join" onClick={openModal}>
+        <img src={logo} id="logo_image" alt="VORSAG logo" />
+        <LinksContainer variant="large" />
+        <button
+          className="link-item join_btn"
+          id="join"
+          onClick={() => setIsModalOpen(true)}
+          type="button"
+          aria-label="Join VORSAG"
+        >
           Join
         </button>
-        <Modal />
+        <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       </div>
     </nav>
   );
